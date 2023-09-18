@@ -1,4 +1,4 @@
-# bubblbe-sort
+# bubble-sort
 
 This is the one of the Ruby projects from the Odin Project.
 
