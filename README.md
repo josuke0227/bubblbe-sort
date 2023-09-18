@@ -8,7 +8,7 @@ return the array after sorting the elements in ascending order.
 The below is the example:
 ```Ruby
 input = [4, 3, 2, 1]
-p bubble-sort(input)
+p bubble_sort(input)
 # => [1, 2, 3, 4]
 ```
 
