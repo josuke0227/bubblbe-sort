@@ -2,20 +2,23 @@
 def bubble_sort(numbers)
     return numbers if numbers.empty?
 
-    (numbers.length - 1).times do
-        for i in 1...numbers.length do
-            left = numbers[i - 1]
-            right = numbers[i]
-            if left > right
-                temp = right
-                numbers[i] = left
-                numbers[i - 1] = temp 
+    n = numbers.length
+    swapped = true
+
+    while swapped
+        swapped = false
+
+        (n - 1).times do |i|
+            if numbers[i] > numbers[i + 1]
+                numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
+                swapped = true
             end
         end
     end
     numbers
 end
     
-input = [4, 3, 2, 1]
+input = [4, 3, 2, 1].shuffle
+p input
 # input = []
 p bubble_sort(input.shuffle)
